@@ -1,0 +1,20 @@
+import re
+
+# 1. {n} — ровно n раз
+print(re.findall("a{2}", "a aa aaa aaaa"))
+
+
+# 2. {n,} — минимум n раз
+print(re.findall("a{2,}", "a aa aaa aaaa"))
+
+
+# 3. {n,m} — от n до m
+print(re.findall("a{2,3}", "a aa aaa aaaa"))
+
+
+# 4. цифры длиной 3
+print(re.findall(r"\d{3}", "123 45 6789"))
+
+
+# 5. слово длиной 4
+print(re.findall(r"\w{4}", "This is test code"))
