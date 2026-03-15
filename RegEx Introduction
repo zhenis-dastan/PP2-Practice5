@@ -1,0 +1,30 @@
+#1. Проверка есть ли слово "cat"
+
+text = "I have a cat"
+result = re.search("cat", text)
+print(result)
+
+
+# 2. Найти слово "dog"
+
+import re
+text = "My dog is cute"
+print(re.search("dog", text))
+
+# 3. Найти первое число
+
+import re
+text = "Age: 21"
+print(re.search(r"\d+", text))
+
+# 4. Найти все буквы "a"
+
+import re
+text = "banana"
+print(re.findall("a", text))
+
+# 5. Проверить начинается ли строка с Hello
+
+import re
+text = "Hello world"
+print(re.match("Hello", text))
