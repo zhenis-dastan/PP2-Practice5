@@ -1,0 +1,24 @@
+import re
+
+# 1. [abc] — любой из символов
+print(re.findall("[abc]", "apple banana"))
+
+
+# 2. [a-z] — маленькие буквы
+print(re.findall("[a-z]", "Hello123"))
+
+
+# 2. [a-z] — маленькие буквы
+print(re.findall("[a-z]", "Hello123"))
+
+
+# 3. [A-Z] — большие буквы
+print(re.findall("[A-Z]", "Hello World"))
+
+
+# 4. [0-9] — цифры
+print(re.findall("[0-9]", "Year 2025"))
+
+
+# 5. [^0-9] — не цифры
+print(re.findall("[^0-9]", "A1B2C3"))
