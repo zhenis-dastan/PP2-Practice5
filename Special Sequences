@@ -1,0 +1,16 @@
+import re
+
+# 1. \d — цифры
+print(re.findall(r"\d", "Room 123"))
+
+# 2. \w — буквы и цифры
+print(re.findall(r"\w", "Hi_123"))
+
+# 3. \s — пробел
+print(re.findall(r"\s", "Hello World"))
+
+# 4. \D — не цифры
+print(re.findall(r"\D", "A1B2"))
+
+# 5. \S — не пробел
+print(re.findall(r"\S", "Hi there"))
